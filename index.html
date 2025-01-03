@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5af19, #f12711);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            margin: 30px 0;
+            line-height: 1.8;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #f12711;
+            background: #fff;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            animation: fadeIn 3s ease-in-out;
+            transition: background-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button:hover {
+            background-color: #f5af19;
+            color: #fff;
+        }
+
+        .button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, #f5af19 10%, transparent 50%);
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.1);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .button:hover::after {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 30px auto;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .gallery .frame {
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery .frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            animation: fadeIn 3.5s ease-in-out;
+        }
+        .video{
+            padding: 5rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="/4.jpg" alt="Birthday Girl">
+        </div>
+        <h1>Happy Birthday, My Payali !</h1>
+        <p>You are the best friend anyone could ask for. Today is your special day, and I hope it’s filled with love, laughter, and unforgettable memories. 💖</p>
+        <p>You are so special to me because you bring so much joy and positivity into my life. I cherish our little talks, your lovely words, and even our small fights that make our bond even stronger. Your presence makes every moment memorable, and I truly enjoy every conversation and laugh we share. 💕</p>
+        <a href="#" class="button">Enjoy Your Day!</a>
+        <div class="gallery">
+            <div class="frame"><img src="/1.jpg" alt="Memorable Moment 1"></div>
+            <div class="frame"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP2lrTFRMpA1GCJfxdD2CNIbe5ORld318CZg&s" alt="Memorable Moment 2"></div>
+            <div class="frame"><img src="/3.jpg" alt="Memorable Moment 3"></div>
+            <div class="frame"><img src="/2.jpg" alt="Memorable Moment 4"></div>
+        </div>
+        
+        <footer>
+            Made with ❤️ by Ayush Singh
+        </footer>
+    </div>
+</body>
+</html>
